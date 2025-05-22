@@ -1,9 +1,11 @@
-import Header from "../components/header";
+import Breach from "../components/Breach";
+import Header from "../components/Header";
 
 const Home = () => {
     return ( 
     <>
     <Header/>
+    <Breach/>
     </> );
 }
  
