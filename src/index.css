@@ -2,3 +2,10 @@
 * {
     font-family: "Oswald", sans-serif;
 }
+@theme{
+    --color-azul-vessel :#054A91;
+    --color-amarelo-trench :#FFF700;
+    --color-vermelho-blurryface :#C90000;
+    --color-rosa-scaleandicy :#FF007B;
+    --color-vermelho-clancy :#5a0703;
+}

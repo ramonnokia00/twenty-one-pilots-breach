@@ -1,4 +1,5 @@
 import Breach from "../components/Breach";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <>
     <Header/>
     <Breach/>
+    <Footer/>
     </> );
 }
  
