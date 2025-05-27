@@ -1,9 +1,15 @@
 import imagemBreach from "../assets/top_breach.svg"
-import imagemCardDoubtDemo from "../assets/Promocardoubtcinza.jpeg"
+import imagemCardDoubtDemo from "../assets/promoquardado.jpeg"
 import iconespotify from "../assets/boxiconsspotify.svg"
+import iconedezzer from "../assets/bxl-deezer.svg"
+import iconeamazonmusic from "../assets/bxl-amazon.svg"
+import iconeyoutube from "../assets/bxl-youtube.svg"
+import iconeapple from "../assets/bxl-apple.svg"
 
 
 const Breach = () => {
+     
+    
     return (
         <>
             <div className="flex justify-center">
@@ -21,15 +27,16 @@ const Breach = () => {
                         <img src={imagemCardDoubtDemo} alt="" className="w-[200px] h-[150px] rounded " /><b className=" bg-[#FFD900] rounded hover:bg-yellow-500 duration-150 cursor-pointer justify-center flex mt-2">Ouça Agora!</b>
                         <p className=" text-red-600 flex">Enquanto o album não saiu ouça agora o ultimo EP lançado.</p>
                         <b className="w-[200px] h-[60px] bg-red-600 "></b>
-
-
                     </div>
-                    <div className="bg-black w-[200px] h-[200px] mt-6 items-center">
-                        <h3 className="text-red-600 text-center p-3">Faça Seu Pre-Save Em Umas Das Plataformas</h3>
+                    <div className="bg-black w-[200px]  mt-6 items-center pb-1">
+                        <h3 className="text-red-600 text-center pt-1">Faça Seu Pre-Save Em Umas Das Plataformas</h3>
                         <b className="bg-[#FFD900] justify-center flex mt-4 rounded cursor-pointer hover:bg-amber-400 "><img src={iconespotify} alt="" /></b>
-                        <b className="bg-[#FFD900] justify-center flex mt-4 rounded cursor-pointer hover:bg-amber-400 "><img src={iconespotify} alt="" /></b>
-                        <b className="bg-[#FFD900] justify-center flex mt-4 rounded cursor-pointer hover:bg-amber-400 "><img src={iconespotify} alt="" /></b>                   </div>
-                    <p className="text-red-600 bg-black mt-6 rounded-[20px] w-[200px] pt-5 pl-5 pr-5 mr-8">Afinal, o que a banda quis dizer com "vamos terminar isso"? Desde Blurryface (2015), o grupo começou a trazer uma narrativa nos discos — <br />e seguiu com Trench (2018), Scaled and Icy e Clancy (2024)</p>
+                        <b className="bg-[#FFD900] justify-center flex mt-4 rounded cursor-pointer hover:bg-amber-400 "><img src={iconedezzer} alt="" /></b>
+                        <b className="bg-[#FFD900] justify-center flex mt-4 rounded cursor-pointer hover:bg-amber-400 "><img src={iconeapple} alt="" /></b>
+                        <b className="bg-[#FFD900] justify-center flex mt-4 rounded cursor-pointer hover:bg-amber-400 "><img src={iconeyoutube} alt="" /></b>
+                        <b className="bg-[#FFD900] justify-center flex mt-4 rounded cursor-pointer hover:bg-amber-400 "><img src={iconeamazonmusic} alt="" /></b>
+                    </div>
+                    <p className="text-red-600 bg-black mt-6 rounded-[20px] w-[200px] py-2 pl-5 pr-5 mr-8">Afinal, o que a banda quis dizer com "vamos terminar isso"? Desde Blurryface (2015), o grupo começou a trazer uma narrativa nos discos — <br />e seguiu com Trench (2018), Scaled and Icy e Clancy (2024)</p>
                 </div>
             </div >
         </>);
