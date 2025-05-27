@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import logosvg from "../assets/logosvg.svg"
 
 const Footer = () => {
@@ -6,14 +7,14 @@ const Footer = () => {
             <div className="justify-center flex py-4">
                 <img src={logosvg} alt="" className="w-[30px]" />
             </div>
-            <table className="flex gap-[20px]  ml-10 text-start hover:text-center my-6 xl:gap-[120px]">
+            <table className="flex ml-10 text-start hover:text-center my-6 custom-max:gap-[40px] min-xl:gap-[60px] ">
                 <ul>
                     <li className="cursor-pointer hover:ml-4 hover:text-white duration-200 hover:underline text-2xl">Twenty One Pilots(2009)</li>
                     <li className="cursor-pointer hover:ml-4 hover:text-white duration-200 hover:underline">Musicas</li>
                     <li className="cursor-pointer hover:ml-4 hover:text-white duration-200 hover:underline">Sobre o Disco</li>
                 </ul>
                 <ul>
-                    <li className="cursor-pointer hover:ml-4 hover:text-azul-vessel duration-200 hover:underline text-2xl">Vessel(2013)</li>
+                    <li className="cursor-pointer hover:ml-4 hover:text-azul-vessel duration-200 hover:underline text-2xl"><NavLink to="/">Vessel(2013)</NavLink></li>
                     <li className="cursor-pointer hover:ml-4 hover:text-azul-vessel duration-200 hover:underline">Musicas</li>
                     <li className="cursor-pointer hover:ml-4 hover:text-azul-vessel duration-200 hover:underline">Sobre o Disco</li>
                 </ul>

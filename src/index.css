@@ -8,4 +8,6 @@
     --color-vermelho-blurryface :#C90000;
     --color-rosa-scaleandicy :#FF007B;
     --color-vermelho-clancy :#5a0703;
+     --breakpoint-custom-min: 1024px;
+     --breakpoint-custom-max: 1224px;
 }
