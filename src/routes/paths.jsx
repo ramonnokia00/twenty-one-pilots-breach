@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Router, Routes } from "react-router";
 import PageLayout from "../layouts/PageLayout";
 import Home from "../pages/home";
+import Vessel from "../components/vessel";
 
 const Paths = () => {
     return (
@@ -8,6 +9,7 @@ const Paths = () => {
             <Routes>
                 <Route path="/" element={<PageLayout />}>
                     <Route index element={<Home />} />
+                    <Route path="Vessel" element={<Vessel/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>
