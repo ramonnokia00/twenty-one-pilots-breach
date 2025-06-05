@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "daisyui";
 * {
     font-family: "Oswald", sans-serif;
 }
@@ -10,7 +11,4 @@
     --color-vermelho-clancy :#5a0703;
      --breakpoint-custom-min: 1024px;
      --breakpoint-custom-max: 1224px;
-}
-#playerbtn{
-    
 }
