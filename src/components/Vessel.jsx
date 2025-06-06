@@ -1,5 +1,5 @@
 
-import Carrosel_vessel from "./Carrosel_vessel";
+import Carrosel_vessel from "./carrosel_vessel"
 import Player from "./PlayerDeMusica";
 const Vessel = () => {
     return (

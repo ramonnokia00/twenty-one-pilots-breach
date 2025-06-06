@@ -9,7 +9,7 @@ const Footer = () => {
             </div>
             <table className="flex ml-10 text-start hover:text-center my-6 custom-max:gap-[40px] min-xl:gap-[60px] ">
                 <ul>
-                    <li className="cursor-pointer hover:ml-4 hover:text-gray-500 duration-200 hover:underline text-2xl">Twenty One Pilots(2009)</li>
+                    <li className="cursor-pointer hover:ml-4 hover:text-gray-500 duration-200 hover:underline text-2xl"><NavLink to="/Twenty2009">Twenty One Pilots(2009)</NavLink></li>
                     <li className="cursor-pointer hover:ml-4 hover:text-gray-500 duration-200 hover:underline">Musicas</li>
                     <li className="cursor-pointer hover:ml-4 hover:text-gray-500 duration-200 hover:underline">Sobre o Disco</li>
                 </ul>

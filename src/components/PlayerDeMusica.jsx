@@ -40,46 +40,60 @@ const Player = () => {
             }
         };
 
+        const atualizarIcone = () => {
+            if (player.paused) {
+                playBtn.setAttribute("name", "play");
+            } else {
+                playBtn.setAttribute("name", "pause");
+            }
+        };
+
         playBtn.addEventListener("click", alternarPlayPause);
-        player.addEventListener("play", () => {
-            playBtn.classList.remove("fa-play");
-            playBtn.classList.add("fa-pause");
-        });
-        player.addEventListener("pause", () => {
-            playBtn.classList.add("fa-play");
-            playBtn.classList.remove("fa-pause");
-        });
+        player.addEventListener("play", atualizarIcone);
+        player.addEventListener("pause", atualizarIcone);
         player.addEventListener("timeupdate", atualizarProgresso);
 
         return () => {
             playBtn.removeEventListener("click", alternarPlayPause);
-            player.removeEventListener("play", () => { });
-            player.removeEventListener("pause", () => { });
+            player.removeEventListener("play", atualizarIcone);
+            player.removeEventListener("pause", atualizarIcone);
             player.removeEventListener("timeupdate", atualizarProgresso);
         };
     }, []);
 
     return (
-        <div className="flex justify-center min-h-[100] bg-azul-vessel text-white">
+        <div className="flex justify-center bg-azul-vessel text-white rounded-[64px] py-2 items-center">
             <audio
                 ref={audioRef}
                 src={music1}
-                className="w-[640px] gap-[16px] pl-[8px] pt-[24px] relative rounded-[64px]"
+                className="gap-[16px] pl-[8px] pt-[24px] relative rounded-[64px]"
             ></audio>
             <div className="flex gap-[22px]">
-                <div className="">
-                    <box-icon name='play' className=" fill-white cursor-pointer"
-                        id="playerbtn" ref={playBtnRef} ></box-icon>
+                <div>
+                    <box-icon
+                        name="play"
+                        class="fill-white cursor-pointer"
+                        id="playerbtn"
+                        ref={playBtnRef}
+                    />
                 </div>
-                <div className="">
+                <div>
                     Ode To Sleep - Vessel
                     <div id="bar">
-                    <div id="progress" ref={progressRef} className="">
-
-                    </div>
+                        <div
+                            id="progress"
+                            ref={progressRef}
+                            className="h-1 w-full bg-gray-700 rounded"
+                            style={{
+                                background:
+                                    "linear-gradient(to right, white var(--progress, 0%), #333 var(--progress, 0%))",
+                            }}
+                        ></div>
                     </div>
                 </div>
-                <div id="current" ref={currentRef}>0:00</div>
+                <div id="current" ref={currentRef}>
+                    0:00
+                </div>
             </div>
         </div>
     );
